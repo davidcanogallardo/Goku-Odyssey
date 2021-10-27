@@ -7,3 +7,5 @@ Proyecto final de programación de SMX (2019).\
   - Wajores
 
 da palo organizar las fotos y mp3 en carpetas uwu
+
+[Guía del juego](https://github.com/davidcanogallardo/Goku-Odyssey/blob/master/guia.pdf)
