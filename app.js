@@ -27,28 +27,28 @@ var config = {
   var game = new Phaser.Game(config);
 
   function preload() {
-    this.load.image("p1", "portada1.png");
-    this.load.image("pfinal", "fin.png");
-    this.load.image("p2", "portada2.png");
-    this.load.image("bola", "bola.png");
-    this.load.image("piedra", "piedra.png");
-    this.load.image("fondo", "fondo2.png");
-    this.load.image("nube", "nube.png");
-    this.load.image("nube2", "nubemala.png");
-    this.load.image("platform", "platform.png");
-    this.load.image("ground", "suelo2.png");
-    this.load.spritesheet("goku", "ste.png", {
+    this.load.image("p1", "./img/portada1.png");
+    this.load.image("pfinal", "./img/fin.png");
+    this.load.image("p2", "./img/portada2.png");
+    this.load.image("bola", "./img/bola.png");
+    this.load.image("piedra", "./img/piedra.png");
+    this.load.image("fondo", "./img/fondo2.png");
+    this.load.image("nube", "./img/nube.png");
+    this.load.image("nube2", "./img/nubemala.png");
+    this.load.image("platform", "./img/platform.png");
+    this.load.image("ground", "./img/suelo2.png");
+    this.load.spritesheet("goku", "./img/ste.png", {
       frameWidth: 34,
       frameHeight: 44,
     });
-    this.load.bitmapFont("myfont", "font.png", "font.xml");
-    this.load.audio("bolasound", "bola.mp3");
-    this.load.audio("piedrasound", "piedra.mp3");
-    this.load.audio("saltosound", "saltosonido.mp3");
-    this.load.audio("song", "song.mp3");
-    this.load.audio("perder", "perder.mp3");
-    this.load.audio("svictoria", "victoria.mp3");
-    this.load.image("victoria", "victoria.png");
+    this.load.bitmapFont("myfont", "./img/font.png", "font.xml");
+    this.load.audio("bolasound", "./sound/bola.mp3");
+    this.load.audio("piedrasound", "./sound/piedra.mp3");
+    this.load.audio("saltosound", "./sound/saltosonido.mp3");
+    this.load.audio("song", "./sound/song.mp3");
+    this.load.audio("perder", "./sound/perder.mp3");
+    this.load.audio("svictoria", "./sound/victoria.mp3");
+    this.load.image("victoria", "./img/victoria.png");
   }
 
   function create() {
