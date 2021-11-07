@@ -2,6 +2,7 @@ var config = {
     type: Phaser.AUTO,
     width: 504,
     height: 600,
+    parent: 'container',
     physics: {
       default: "arcade",
       arcade: {
@@ -41,6 +42,7 @@ var config = {
       frameWidth: 34,
       frameHeight: 44,
     });
+    
     this.load.bitmapFont("myfont", "./img/font.png", "font.xml");
     this.load.audio("bolasound", "./sound/bola.mp3");
     this.load.audio("piedrasound", "./sound/piedra.mp3");
@@ -49,9 +51,23 @@ var config = {
     this.load.audio("perder", "./sound/perder.mp3");
     this.load.audio("svictoria", "./sound/victoria.mp3");
     this.load.image("victoria", "./img/victoria.png");
+
+
+    this.load.image("menu-bg", "./img/menu.png")
   }
 
   function create() {
+
+    //var playBtn = this.add.bitmapText(200, 200, "myfont", { fontSize: "32px" }).setScrollFactor(0).setInteractive();
+    //playBtn.setText("Jugar", { fontFamily: "font1" }).setDepth(99)
+    //this.add.image(252, 1650, "menu-bg").setDepth(90);
+
+    //playBtn.on("pointerdown", (event) => {
+      //console.log(event);
+    //})
+    
+
+
     // no me toques
 
     this.add.image(252, 474, "fondo");
@@ -70,12 +86,13 @@ var config = {
     cancion.play();
 
     //bola 1
-    bola1 = this.physics.add.image(372, 1830, "bola");
+    bola1 = this.physics.add.image(372, 1830, "bola")
     bola2 = this.physics.add.image(436, 1830, "bola");
     bola3 = this.physics.add.image(447, 1550, "bola");
     bola4 = this.physics.add.image(336, 400, "bola");
     bola4.body.allowGravity = false;
     bola5 = this.physics.add.image(25, 320, "bola");
+
 
     //piedra1
     piedra1 = this.physics.add.image(90, 1270, "piedra");
